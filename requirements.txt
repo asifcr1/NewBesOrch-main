@@ -1,0 +1,15 @@
+black
+cffi
+cryptography
+jose
+passlib
+python-dotenv
+python-jose
+regex
+fastapi
+pydantic
+requests
+uvicorn
+python-multipart
+pandas
+redis
