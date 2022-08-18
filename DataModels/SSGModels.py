@@ -1,10 +1,17 @@
+from pydantic import BaseModel
 from .GeneralModels import Session, Venue
-
-class Venue(Venue):
-    wheelChairAccess: bool
+from typing import List
 
 
-class Session(Session):
-    venue: Venue
-    attendanceTaken: bool
-    deleted: bool
+class SSGVenue(Venue):
+    pass
+
+
+class SSGSession(Session):
+    venue: SSGVenue
+
+class SSGSessionResponse(BaseModel):
+    runID: str
+    sessions: List[SSGSession]
+
+

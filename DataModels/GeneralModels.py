@@ -8,7 +8,7 @@ class Venue(BaseModel):
     building: str
     postalCode: str
     room: str
-    # wheelChairAccess: bool
+    wheelChairAccess: bool
 
 
 class Session(BaseModel):
@@ -18,6 +18,5 @@ class Session(BaseModel):
     startTime: str
     endTime: str
     modeOfTraining: str
-    # venue: Venue
-    # attendanceTaken: bool
-    # deleted: bool
+    attendanceTaken: bool
+    deleted: bool

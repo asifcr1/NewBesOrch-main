@@ -20,11 +20,17 @@ class VenueIDsDao(VenueIDsDaoBase):
 
 
 
-
-
+# import time
+#
 #
 # obj = VenueIDTadaBase(venueObject="4342" , TadaBaseRecordId="jfeo")
 # VID = VenueIDsDao()
+# start_time = time.time()
 # VID.addMember(obj)
-# print(VID.checkExist("1234"))
-# print(VID.retrieveRecordIdfromSessionId("1234"))
+# print("Adding member to Redis --- %s seconds ---" % (time.time() - start_time))
+# start_time = time.time()
+# VID.checkExist("1234")
+# print("Checking for a key in Redis --- %s seconds ---" % (time.time() - start_time))
+# start_time = time.time()
+# VID.retrieveRecordIdfromSessionId("1234")
+# print("Retrieving a key value from Redis --- %s seconds ---" % (time.time() - start_time))

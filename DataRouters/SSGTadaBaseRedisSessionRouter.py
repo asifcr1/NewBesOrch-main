@@ -1,5 +1,5 @@
 from DataRoutersBased import SSGTadaBaseSession
-from DataModels.SSGModels import Session as SSGSession
+from DataModels.SSGModels import SSGSession as SSGSession
 from DataModels.TadaBaseModels import Session as TadaBaseSession
 from DataModels.TadaBaseModels import Venue as TadaBaseVenue
 from DataModels.DataRoutersModels import SessionResponse, VenueResponse, TadaBaseSessionModelResponse
@@ -55,10 +55,10 @@ class SSGTadaBaseSessionRouter(SSGTadaBaseSession):
         return FinalResponse
 
 
-# from DataModels.SSGModels import Venue as SSGVenue
-# import time
-# obj = SSGSession(id='Fuchun 019-41-S', startDate='20190814', endDate='20190814', startTime='15:30', endTime='17:30', modeOfTraining='1', venue=SSGVenue(block='112A', street='Street ABC', floor='15', unit='001', building='Building ABC', postalCode='12345', room='24', wheelChairAccess=True), attendanceTaken=False, deleted=False)
-# start_time = time.time()
-# STSR = SSGTadaBaseSessionRouter()
-# print(STSR.insertSSGToTadaBase(obj))
-# print("--- %s seconds ---" % (time.time() - start_time))
+from DataModels.SSGModels import Venue as SSGVenue
+import time
+obj = SSGSession(id='Fuchun 019-41-S', startDate='20190814', endDate='20190814', startTime='15:30', endTime='17:30', modeOfTraining='1', venue=SSGVenue(block='112A', street='Street ABC', floor='15', unit='001', building='Building ABC', postalCode='12345', room='24', wheelChairAccess=True), attendanceTaken=False, deleted=False)
+start_time = time.time()
+STSR = SSGTadaBaseSessionRouter()
+print(STSR.insertSSGToTadaBase(obj))
+print("--- %s seconds ---" % (time.time() - start_time))

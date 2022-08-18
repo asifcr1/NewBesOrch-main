@@ -1,7 +1,7 @@
 from typing import Union
 from .DataModelsMappersBase import SSGToTadaBaseMapperBase
 
-from DataModels.SSGModels import Session as SSGSession
+from DataModels.SSGModels import SSGSession as SSGSession
 from DataModels.TadaBaseModels import Session as TadaBaseSession
 from DataModels.TadaBaseModels import Venue as TadaBaseVenue
 
