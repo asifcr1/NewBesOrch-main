@@ -62,7 +62,7 @@ BESOrchestrator is developed using Python. So, Python is the main prerequisite f
 To run the BESOrchestrator locally, we need to use the ASGI web server, Uvicorn:
 
 ```sh
-uvicorn main:app –reload
+uvicorn NewMain:app
 ```
 
 ## Deploy to AKS
